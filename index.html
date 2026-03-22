@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META INFORMATION ===== -->
+    <!-- Sets character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes page responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (shown in browser tab) -->
+    <title>Media Layout</title>
+
+    <!-- ===== LINK TO EXTERNAL CSS FILE ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <!-- Contains the main heading of the page -->
+    <header>
+        <h1>Media Gallery</h1>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <!-- Wraps all main content of the webpage -->
+    <main>
+
+        <!-- ===== TEXT CONTENT SECTION ===== -->
+        <!-- This section holds the written content -->
+        <section class="content">
+            <h2>About</h2>
+
+            <!-- Paragraph 1 -->
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis adipiscing per id libero libero.
+            </p>
+
+            <!-- Paragraph 2 -->
+            <p>
+                Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti.
+            </p>
+        </section>
+
+        <!-- ===== GALLERY SECTION ===== -->
+        <!-- This section uses Flexbox to display images and video -->
+        <section class="gallery">
+
+            <!-- IMAGE 1 -->
+            <img src="images/cow.jpg" alt="Cow standing on beach">
+
+            <!-- VIDEO (WITH CONTROLS REQUIRED FOR MARKS) -->
+            <video controls>
+                <source src="video/clip.mp4" type="video/mp4">
+                <!-- Fallback text if video is not supported -->
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- IMAGE 2 -->
+            <img src="images/train.jpg" alt="Train tracks at night">
+
+            <!-- IMAGE 3 -->
+            <img src="images/camera.jpg" alt="Vintage camera">
+
+            <!-- IMAGE 4 -->
+            <img src="images/mountain.jpg" alt="Snowy mountain landscape">
+
+            <!-- IMAGE 5 -->
+            <img src="images/landscape.jpg" alt="Hilly landscape view">
+
+            <!-- IMAGE 6 -->
+            <img src="images/building.jpg" alt="Old building with car">
+
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <!-- Contains copyright information -->
+    <footer>
+        <p>&copy; 2026 Student Project</p>
+    </footer>
+
+</body>
+</html>

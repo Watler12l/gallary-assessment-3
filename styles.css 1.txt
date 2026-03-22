@@ -1,0 +1,83 @@
+/* ===== RESET DEFAULT STYLES ===== */
+/* Removes default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY STYLING ===== */
+/* Applies font to entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+/* Styles the top section of the page */
+header {
+    background-color: #111; /* Dark background */
+    color: white;           /* White text */
+    text-align: center;     /* Center text */
+    padding: 20px;          /* Space inside header */
+}
+
+/* ===== MAIN LAYOUT ===== */
+/* Centers content and limits width */
+main {
+    max-width: 1200px;  /* Prevents content from being too wide */
+    margin: auto;       /* Centers content horizontally */
+}
+
+/* ===== TEXT SECTION ===== */
+/* Styles the written content area */
+.content {
+    padding: 20px; /* Adds spacing inside section */
+}
+
+/* Paragraph styling */
+.content p {
+    margin-bottom: 10px; /* Space between paragraphs */
+    line-height: 1.6;    /* Improves readability */
+}
+
+/* ===== GALLERY (FLEXBOX) ===== */
+/* This is the key part for layout */
+.gallery {
+    display: flex;      /* Enables Flexbox */
+    flex-wrap: wrap;    /* Allows items to wrap onto new lines */
+}
+
+/* ===== MEDIA ITEMS ===== */
+/* Applies to BOTH images and video */
+.gallery img,
+.gallery video {
+    height: 250px;       /* Forces SAME HEIGHT (REQUIRED) */
+    flex-grow: 1;        /* Allows flexible width */
+    object-fit: cover;   /* Crops images to fit nicely */
+    display: block;      /* Removes inline spacing (NO GAPS) */
+}
+
+/* ===== HOVER EFFECT ===== */
+/* Adds small zoom when hovering (extra marks) */
+.gallery img:hover,
+.gallery video:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* ===== FOOTER ===== */
+/* Styles the bottom section */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: white;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
